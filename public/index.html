@@ -2,11 +2,100 @@
 <html>
 <head>
 <title>Sample</title>
+    <link rel="stylesheet" href="src/bootstrap-3.3.5-dist/css/style.css">
+    <script src="scripts/jquery.min.js"></script>
+    <script src="./scripts/testZip.js"></script>
+    <script src="./scripts/testBar.js"></script>
+    <script src="scripts/my-script.js"></script>
 </head>
 <body>
 <h1 id="title"></h1>
+<center>
+<header id="head">
+    <h1>POST-NET</h1>
+    <br>
+    <hr>
 
-<script src="scripts/jquery.min.js"></script>
-<script src="scripts/my-script.js"></script>
+    <br>
+</header>
+</center>
+<center>
+<section id ='translator' >
+    <form id="translatorForm">
+
+        <div >
+            <lable for="input_code">input code &nbsp&nbsp&nbsp&nbsp</lable>
+            <!--class="col-sm-10"-->
+            <input type="text" id="input_code" placeholder="please input code here">
+            <br>
+            <br>
+            <div id="errorMessage"></div>
+        </div>
+
+        <br>
+    </form>
+
+
+        <br>
+        <div>
+            <span >result:</span>
+            <span id="result"></span>
+        </div>
+    <br>
+    <br>
+    <br>
+
+    <!--class="checkbox-inline"-->
+    <lable>
+        <input type="radio" id="barTozip"
+               form="translator" name="translatorBtn" value="toZip" checked/>
+        barcode To zipcode
+    </lable>
+    <br>
+    <br>
+    <!--class="checkbox-inline"-->
+    <lable>
+        <input type="radio" id="zipToBar"
+               form="translator" name="translatorBtn" value="toBar" checked/>
+        zipcode To barcode
+    </lable>
+    <br>
+    <br>
+    <!--class="btn btn-primary"-->
+    <br>
+    <button id="submit" type="button"
+            form="translator">ok</button>
+</section>
+</center>
+<br>
+<br>
+<br>
+<center>
+<section id="history">
+    <h2>History</h2>
+    <table id="historyTable" >
+        <thead>
+        <tr>
+            <th>
+                code
+            </th>
+            <th>
+                result
+            </th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+
+
+</section>
+
+</center>
+
+
 </body>
 </html>
